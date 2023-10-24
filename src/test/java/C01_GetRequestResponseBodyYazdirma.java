@@ -14,5 +14,9 @@ public class C01_GetRequestResponseBodyYazdirma {
         Response response = given().when().get(url);
         response.prettyPrint();//bodyi yazdirmak icin kullaniyoruz
         //4-Assertion
+
+        //assertionnnnnnn
+
+        //assertionnnnn
     }
 }
