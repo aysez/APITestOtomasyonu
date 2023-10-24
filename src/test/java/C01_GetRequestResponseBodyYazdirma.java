@@ -16,5 +16,7 @@ public class C01_GetRequestResponseBodyYazdirma {
         //4-Assertion
 
         //assertionnnnnnn
+
+        //assertionnnnn
     }
 }
