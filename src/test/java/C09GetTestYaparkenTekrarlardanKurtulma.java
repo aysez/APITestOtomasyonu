@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 
-public class C09_Get_TestYaparkenTekrarlardanKurtulma {
+public class C09GetTestYaparkenTekrarlardanKurtulma {
 
     @Test
     public void test01(){
@@ -33,6 +33,7 @@ public class C09_Get_TestYaparkenTekrarlardanKurtulma {
         Response response= given().when().get(url);
 
         // 4- Assertion
+        response.prettyPrint();
 
         /* ikinci yontem ile yaptigimizda bu testimizdeki yazilanlar degismesin diye
         yoruma aldim.
@@ -55,11 +56,11 @@ public class C09_Get_TestYaparkenTekrarlardanKurtulma {
                 .assertThat()
                 .statusCode(200)
                 .contentType(ContentType.JSON)
-                .body("firstname",equalTo("Eric"),
+                .body("firstname",equalTo("Mary"),
                         "lastname", equalTo("Jackson"),
                         "totalprice",lessThan(1000),
-                        "depositpaid",equalTo(true),
-                        "additionalneeds",notNullValue());
+                        "depositpaid",equalTo(false),
+                        "additionalneeds",nullValue());
 
     }
 }

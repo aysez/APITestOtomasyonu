@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C02_GetRequest_ReponseBilgilerininManuelTestEdilmesi {
+public class c02Getrequestreponsebilgilerininmanueltestedilmesi {
 
 
     @Test

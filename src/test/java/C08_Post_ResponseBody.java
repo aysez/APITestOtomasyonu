@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C08_Post_ResponseBodyTesti {
+public class C08_Post_ResponseBody {
 
     @Test
     public void test01(){
@@ -52,5 +52,7 @@ public class C08_Post_ResponseBodyTesti {
                 .body("title", Matchers.equalTo("API"))
                 .body("userId",Matchers.lessThan(100))
                 .body("body",Matchers.containsString("API"));
+
+        response.prettyPrint();
     }
 }
